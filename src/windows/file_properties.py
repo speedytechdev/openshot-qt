@@ -115,7 +115,7 @@ class FileProperties(QDialog):
 
         self.txtStartFrame.setMaximum(int(self.file.data["video_length"]))
         if 'start' not in file.data.keys():
-            self.txtStartFrame.setValue(1)
+            self.txtStartFrame.setValue(0)
         else:
             self.txtStartFrame.setValue(round(float(file.data["start"]) * fps_float) + 1)
 
